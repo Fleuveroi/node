@@ -62,6 +62,8 @@ if [[ "$RETH_HISTORICAL_PROOFS" == "true" && -n "$RETH_HISTORICAL_PROOFS_STORAGE
         --log.stdout.format json \
         --datadir="$RETH_DATA_DIR" \
         --proofs-history.storage-path=$RETH_HISTORICAL_PROOFS_STORAGE_PATH
+
+    sleep 60
 fi
 
 mkdir -p "$RETH_DATA_DIR"
